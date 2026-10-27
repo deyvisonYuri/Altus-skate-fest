@@ -1,0 +1,353 @@
+@font-face {
+    font-family: oswald;
+    src: url(Oswald/Oswald-VariableFont_wght.ttf);
+}
+.hero {
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 24px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.10)
+        ),
+        url("foto da pista de skate2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.anuncio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+    color: #f6f5f3;
+    margin-top: 0;
+    margin-bottom: -30px;
+}
+
+.anuncio h1 {
+    font-size: clamp(48px, 5.5vw, 82px);
+    line-height: 1.02;
+    margin: 0;
+}
+
+.destaque-amarelo{
+    color: #ffcc16;
+}
+
+/* Remove a margem padrão do navegador */
+body {
+    margin: 0;
+    background: #000;
+}
+.data {
+    border-radius: 15px;
+    padding: 25px;
+    width: 180px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Oswald','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.local {
+    border-radius: 15px;
+    padding: 25px;
+    width: 150px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Oswald', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.painel{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(30px, 8vw, 150px);
+    justify-content:flex-start;
+    color: white;
+    align-items: center;
+}
+.painel h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.painel h3 {
+    font-family: Oswald, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 0;
+}
+.icone{
+    line-height: 1;
+}
+
+.topo{
+    color: #ffcc16;
+    display: flex;
+    margin: 45px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.topo h1{
+    margin:0;
+}
+.entrada{
+    color: aliceblue;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 35px;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.interaçao{
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    align-items: center;
+
+}
+.btn-inscricao, .btn-horario,.btn-patrocinadores, .btn-caegorias{
+
+  display: inline-flex;
+  background-color: #ffcc16;
+  color: #000;
+  padding: 34px 45px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 320px;
+
+  font-family: oswald, sans-serif;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none; 
+  white-space: nowrap;
+  border: none;
+  box-shadow: 0 10px 30px rgba(255, 205, 22, 0.733);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-inscricao:hover,
+.btn-horario:hover,
+.btn-atracao:hover,
+.btn-caegorias:hover{
+    background-color: #ffe04a;
+    transform: translateY(-3px);
+}
+
+/* A programação começa em uma nova seção */
+.programacao {
+    background-color: #080808;
+    color: white;
+    padding: 60px 7%;
+}
+
+.subtitulo{
+    color: #ffcc16;
+    font-family: 'Oswald','sans-serif';
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.programacao > h2{
+    font-family: 'Oswald','sans-serif';
+    font-size: clamp(42px,6vw,75px);
+    line-height: 1.1;
+    margin: 15px 0 40px;
+}
+.programacao > h2 span{
+    color: #ffcc16;
+}
+.lista-horario{
+    max-width: 800px;
+}
+.item-horario{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #333;
+}
+.show{
+    background: #ffcc16;
+    color: #000000;
+    padding: 12px;
+    min-width: 80px;
+    text-align: center;
+    font-family: 'Oswald','sans-serif';
+    font-size: 20px;
+    font-weight: 800;
+}
+.item-horario h3 {
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+
+.item-horario p {
+    color: #bdbdbd;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#horario {
+    scroll-margin-top: 20px;
+}
+#categorias{
+    scroll-margin-top: 10px;
+}
+.categorias{
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding: 20px 7%;
+    box-shadow: 5px 5px 5px rgba(107, 101, 101, 0.356);
+    border-radius: 120px;
+    margin-bottom: 100px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.categorias > h2{
+    font-family: 'Oswald','sans-serif';
+    font-size: clamp(42px,6vw,75px);
+    line-height: 1.1;
+    margin: 15px 0 0px;
+    font-size: 50px;
+}
+
+.categorias span{
+    color: #ffcc16;
+}
+.item-categorias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mirim, .Amador, .Iniciante, .Master, .Feminino {
+    display: flex;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    background-color: #ffcc16;
+    border-radius: 15px;
+    color: #000000;
+    padding: 10px 5px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 35%;
+    flex: 1;
+}
+.fonte-premiacao{
+    font-family: 'Oswald','sans-serif';
+    font-size: clamp(42px,6vw,75px);
+    line-height: 1.1;
+    margin: 15px 0 0px;
+    font-size: 50px;
+}
+
+.fonte-premiacao span{
+    color: #ffcc16;
+}
+.explicacao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 15px 0 0px;
+}
+
+.Amador-premio, .Master-premio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #000000;
+    padding: 25px;
+    margin: 20px;
+    box-sizing: border-box;
+    width: 450px;
+    background-color: #ffcc16;
+    box-shadow: #000;
+}
+.Amador-premio h3, .Master-premio h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+   font-size: 28px;
+   margin: 0 0 15px;
+}
+.Amador-premio p, .Master-premio p {
+    font-size: 20px;
+    margin: 4px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+}
+.item-premiacao{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#patrocinadores{
+    scroll-margin-top: 10px;
+}
+
+.patrocinadores{
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding: 20px 7%;
+    box-shadow: 5px 5px 5px rgba(107, 101, 101, 0.356);
+    border-radius: 120px;
+    margin-bottom: 100px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.patrocinadores h1{
+    font-family:'Oswald','sans-serif';
+     font-size: clamp(42px,6vw,75px);
+    line-height: 1.1;
+    margin: 15px 0 0px;
+    font-size: 50px;
+}
+.patrocinadores span{
+    color: #ffcc16;
+}
+
+.imagem-patrocinadores {
+    display: block;
+    width: 100%;
+    max-width: 1250px;
+    height: auto;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
