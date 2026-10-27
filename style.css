@@ -351,3 +351,160 @@ html {
     margin: 20px auto 0;
     border-radius: 30px;
 }
+
+@media (max-width: 900px) {
+        .item-categorias {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+        }
+
+    .mirim, .Amador, .Iniciante, .Master, .Feminino {
+                flex: 1 1 150px;
+                width: auto;
+                margin: 0;
+    }
+}
+
+@media (max-width: 720px) {
+        .hero {
+                    padding-bottom: 32px;
+                    background-position: 58% center;
+        }
+
+    .topo {
+                margin: 24px 20px 36px;
+                gap: 12px;
+    }
+
+    .topo h1 {
+                font-size: 15px;
+    }
+
+    .entrada {
+                padding: 10px 12px;
+                border-radius: 20px;
+    }
+
+    .entrada h1 {
+                font-size: 12px;
+    }
+
+    .anuncio {
+                padding: 0 20px;
+                margin-bottom: 18px;
+    }
+
+    .anuncio h1 {
+                font-size: clamp(42px, 11vw, 64px);
+    }
+
+    .painel {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+    }
+
+    .data, .local {
+                width: auto;
+                padding: 12px 20px;
+                margin: 0;
+    }
+
+    .painel h2 {
+                font-size: 25px;
+                margin: 0 0 8px;
+    }
+
+    .painel h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
+    }
+
+    .interaçao {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 12px 20px 0;
+    }
+
+    .btn-inscricao, .btn-horario, .btn-patrocinadores, .btn-caegorias {
+                width: 100%;
+                min-height: 60px;
+           
+        padding: 16px;
+        margin: 8px 0;
+        font-size: 20px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .programacao {
+        padding: 48px 20px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .item-horario {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .show {
+        font-size: 18px;
+    }
+
+    .item-horario h3 {
+        font-size: 22px;
+    }
+
+    .item-horario p {
+        font-size: 18px;
+    }
+
+    .categorias, .patrocinadores {
+        padding: 24px 20px;
+        border-radius: 32px;
+        margin: 0 12px 48px;
+    }
+
+    .categorias > h2, .fonte-premiacao {
+        font-size: 40px;
+    }
+
+    .patrocinadores h1 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .item-categorias {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .mirim, .Amador, .Iniciante, .Master, .Feminino {
+        flex-basis: 130px;
+        min-height: 60px;
+        font-size: 20px;
+    }
+
+    .explicacao {
+        font-size: 18px;
+    }
+
+    .item-premiacao {
+        gap: 8px;
+    }
+
+    .Amador-premio, .Master-premio {
+        width: 100%;
+        margin: 8px 0;
+        padding: 20px;
+    }
+
+    .imagem-patrocinadores {
+        border-radius: 12px;
+    }
+}
