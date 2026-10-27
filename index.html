@@ -1,140 +1,170 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Altus skate fest</title>
-    <link rel="shortcut icon" href="skate.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css?v=2">
-    <script src="script.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Altus Skate Fest 2026. Dois dias de skate, música e cultura, em 7 e 8 de novembro, no Parque Vicente Beneli. Entrada franca.">
+  <meta property="og:title" content="Altus Skate Fest 2026 — A gente se vê na pista.">
+  <meta property="og:description" content="07 + 08 de novembro. Parque Vicente Beneli. Skate, música e entrada franca.">
+  <meta property="og:type" content="website">
+  <title>Altus Skate Fest 2026 — A gente se vê na pista.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/oswald-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/pista-altus.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.countdown,.ticker-toggle,.enlarge-button{display:none!important}</style></noscript>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-        <section class="hero" id="inicio">
-        <div class="topo">
-            <SPAn><h1>// SINCE. 2019</h1></SPAn>
-            <SPAn class="entrada"><h1>ENTRADA FRANCA</h1></SPAn>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M4 12h16M12 4v16"/></symbol>
+    <symbol id="board" viewBox="0 0 48 80"><rect x="9" y="3" width="30" height="74" rx="15"/><path d="M16 23h16M16 57h16M19 20v6m10-6v6M19 54v6m10-6v6"/></symbol>
+  </svg>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner container">
+      <a class="wordmark" href="#inicio" aria-label="Altus Skate Fest — início">
+        <span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-type">ALTUS<span>SKATE FEST</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#horario">Programação</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#premiacao">Premiação</a>
+        <a href="#patrocinadores">Parceiros</a>
+      </nav>
+      <a class="header-cta register-link" href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21" target="_blank" rel="noopener noreferrer">Inscreva-se <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação no celular" hidden>
+      <a href="#horario">Programação <span>01</span></a>
+      <a href="#categorias">Categorias <span>02</span></a>
+      <a href="#premiacao">Premiação <span>03</span></a>
+      <a href="#patrocinadores">Parceiros <span>04</span></a>
+      <a class="register-link" href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21" target="_blank" rel="noopener noreferrer">Inscrição pelo WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="live-dot" aria-hidden="true"></span> SKATE. MÚSICA. CULTURA.</div>
+        <h1 id="hero-title"><span class="hero-altus">ALTUS</span><span class="hero-skate">SKATE FEST<span class="title-dot">.</span></span><span class="visually-hidden">2026</span></h1>
+        <div class="hero-tagline"><span class="edition">20<br>26</span><p>Do primeiro rolê à melhor manobra.<br>O nosso encontro é na pista.</p></div>
+        <div class="hero-actions">
+          <a class="button button-yellow register-link" href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21" target="_blank" rel="noopener noreferrer">Bora pra pista <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+          <a class="explore-link" href="#horario"><span class="circle-arrow"><svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></span>Veja a programação</a>
         </div>
-        
-        <div class="anuncio">
-            <h1>ALTUS SKATE <BR> <span class="destaque-amarelo">FEST 2026</span> <BR></h1>
-        </div>
-
-        <div class="painel">
-            <div class="data">
-                <h2> <span class="icone">📅​</span>
-                    QUANDO</h2>
-                <H3>07 e 08 de Novembro</H3>
-            </div>
-            <div class="local">
-                <h2> <span class="icone">📍​</span>
-                 ​LOCAL</h2>
-                <H3> Parque Vicente Beneli</H3>
-            </div>
-        </div>
-
-        <div  class="interaçao">
-            <div class="inscricao">
-            <a href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21"class="btn-inscricao"
-            target="_blank"
-            rel="noopener noreferrer">
-                Inscreva-se agora
-            </a>
-            </div>
-            
-            <a href="#horario" class="btn-horario">
-                Ver horários
-            </a>
-             <a href="#patrocinadores" class="btn-patrocinadores">
-                Ver os Patrocinadores
-            </a>
-            <a href="#categorias" class="btn-caegorias">
-                Ver as Categorias
-            </a>
-        </div>
-        </section>
-
-    <section class="programacao" id="horario">
-        <p class="subtitulo">07 e 08 de Novembro · ALTUS SKATE FEST</p>
-
-         <H2>PROGRAMAÇÃO<span>.</span></H2>
-
-        <div class="lista-horario">
-            <div class="item-horario">
-                <span class="show"> Dia 07 a partir das 18h</span>
-                <div>
-                    <h3>Atrações</h3>
-                    <p>Banda Rádio Tcheka</p>
-                    <p>Praça de Alimentação</p>
-                </div>
-            </div> 
-
-            <div class="item-horario">
-                <span class="show"> Dia 08 a partir das 9h</span>
-                <div>
-                    <h3>Campeonato de Skate</h3>
-                    <p>Mirim</p>
-                    <p>Iniciante</p>
-                    <p>Amador</p>
-                    <p>Master</p>
-                    <p>Feminino</p>
-                </div>
-            </div> 
-        </div>
-
+        <div class="hero-footnote"><span>FEITO DE SKATE. DESDE 2019.</span><span aria-hidden="true">↘</span></div>
+      </div>
+      <figure class="hero-visual">
+        <img class="hero-photo" src="assets/pista-altus.jpg" alt="Vista da pista de skate do Altus, com skatistas nas rampas e nos obstáculos" width="1363" height="768" fetchpriority="high">
+        <div class="photo-vignette" aria-hidden="true"></div>
+        <div class="date-sticker"><span>07 + 08</span><strong>NOVEMBRO</strong><span class="sticker-year">2026 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span></div>
+        <div class="photo-caption"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg><div>O NOSSO PONTO DE ENCONTRO<strong>Parque Vicente Beneli</strong></div></div>
+        <span class="photo-side-label" aria-hidden="true">O ROLÊ É DE TODO MUNDO.</span>
+        <span class="free-sticker">ENTRADA<br><strong>FRANCA</strong></span>
+      </figure>
     </section>
 
-    <section class="categorias" id="categorias">
-        <h2>CATEGORIAS<span>.</span></h2>
-        <div class="item-categorias">
-            <div class="mirim">
-                <h3>Mirim</h3>
-            </div>
-            <div class="Iniciante">
-                <h3>Iniciante</h3>
-            </div>
-            <div class="Amador">
-                <h3>Amador</h3>
-            </div>
-            <div class="Master">
-                <h3>Master</h3>
-            </div>
-            <div class="Feminino">
-                <h3>Feminino</h3>
-            </div>
-        </div>
-        
-        <div class="premiacao">
-            <h2 class="fonte-premiacao">PREMIAÇÃO<span>.</span></h2>
-            <p class="explicacao">Premiação em dinheiro para as categorias a seguir:</p>
-            <div class="item-premiacao">
-                <div class="Amador-premio">
-                    <h3>Amador</h3>
-                    <p>1º-R$700</p>
-                    <p>2º-R$300</p>
-                    <p>3º-R$200</p>
-                </div>
-                <div class="Master-premio">
-                    <h3>Master</h3>
-                    <p>1º-R$500</p>
-                    <p>2º-R$200</p>
-                    <p>3º-R$100</p>
-                </div>
-            </div>
-        </div>
+    <div class="ticker" aria-label="Entrada franca. Dias 7 e 8 de novembro. Altus Skate Fest.">
+      <div class="ticker-track" aria-hidden="true">
+        <div class="ticker-set"><span>ENTRADA FRANCA</span><span class="ticker-star">✳</span><span>07 + 08 NOV</span><span class="ticker-star">✳</span><span>ALTUS SKATE FEST</span><span class="ticker-star">✳</span><span>A RUA CONECTA</span><span class="ticker-star">✳</span></div>
+        <div class="ticker-set"><span>ENTRADA FRANCA</span><span class="ticker-star">✳</span><span>07 + 08 NOV</span><span class="ticker-star">✳</span><span>ALTUS SKATE FEST</span><span class="ticker-star">✳</span><span>A RUA CONECTA</span><span class="ticker-star">✳</span></div>
+      </div>
+      <button class="ticker-toggle" type="button" aria-label="Pausar faixa animada" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button>
+    </div>
+
+    <section class="countdown-section container" aria-labelledby="countdown-title">
+      <div><p class="eyebrow">ANOTA AÍ. CHAMA A GALERA.</p><h2 id="countdown-title">O PRÓXIMO ROLÊ<br>JÁ TEM DATA.</h2></div>
+      <div class="countdown" role="timer" aria-label="Contagem regressiva para 7 de novembro de 2026, às 18 horas, no horário de Brasília">
+        <div><strong id="count-days">--</strong><span>DIAS</span></div><span class="count-separator" aria-hidden="true">:</span>
+        <div><strong id="count-hours">--</strong><span>HORAS</span></div><span class="count-separator" aria-hidden="true">:</span>
+        <div><strong id="count-minutes">--</strong><span>MIN</span></div><span class="count-separator" aria-hidden="true">:</span>
+        <div><strong id="count-seconds">--</strong><span>SEG</span></div>
+      </div>
+      <p class="countdown-status" id="countdown-status" hidden></p>
+      <noscript><p>07 e 08 de novembro de 2026. Sábado a partir das 18h e domingo a partir das 9h.</p></noscript>
     </section>
-    
-    <section class="patrocinadores" id="patrocinadores">
-        <div class="patrocinantes">
-        <h1>PATROCINADORES<span>.</span></h1>
-            <img
-            src="patrocinadores.png"
-            alt="Logotipos dos patrocinadores do Altus Skate Fest 2026"
-            class="imagem-patrocinadores"
-        >
+
+    <section class="schedule-section light-section" id="horario" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow section-index">01 / PROGRAMAÇÃO</p><h2 id="schedule-title">DOIS DIAS.<br>SEM FICAR <em>PARADO.</em></h2></div><p class="heading-note">No sábado, o som toma conta.<br>No domingo, quem fala é o skate.</p></div>
+        <div class="schedule-layout reveal">
+          <div class="schedule-sidebar"><div class="schedule-tabs" aria-label="Escolha o dia da programação">
+            <button class="day-tab active" id="tab-sabado" type="button" data-panel="panel-sabado"><span class="tab-date">07<span>NOV</span></span><span class="tab-label">SÁBADO<small>Música & encontro</small></span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></button>
+            <button class="day-tab" id="tab-domingo" type="button" data-panel="panel-domingo"><span class="tab-date">08<span>NOV</span></span><span class="tab-label">DOMINGO<small>Skate & campeonato</small></span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></button>
+            </div><div class="schedule-note"><span aria-hidden="true">✳</span><p>Dois dias para chegar junto.<br><strong>Entrada franca para o público.</strong></p></div>
+          </div>
+          <div class="schedule-content">
+            <article class="day-panel" id="panel-sabado" aria-labelledby="tab-sabado">
+              <div class="panel-topline"><span>07 DE NOVEMBRO · SÁBADO</span><span class="panel-tag">ABRE O FESTIVAL</span></div>
+              <div class="panel-time"><span>A PARTIR DAS</span><strong>18<small>H</small></strong></div>
+              <div class="schedule-item"><span class="item-number">01</span><div><h3>Banda Rádio Tcheka</h3><p>A trilha sonora do nosso encontro.</p></div><span class="item-tag">MÚSICA</span></div>
+              <div class="schedule-item"><span class="item-number">02</span><div><h3>Praça de alimentação</h3><p>Uma pausa no rolê para recarregar.</p></div><span class="item-tag">GASTRONOMIA</span></div>
+              <div class="panel-bottom"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg> Parque Vicente Beneli</div>
+            </article>
+            <article class="day-panel" id="panel-domingo" aria-labelledby="tab-domingo">
+              <div class="panel-topline"><span>08 DE NOVEMBRO · DOMINGO</span><span class="panel-tag">DIA DE CAMPEONATO</span></div>
+              <div class="panel-time"><span>A PARTIR DAS</span><strong>09<small>H</small></strong></div>
+              <div class="schedule-item"><span class="item-number">01</span><div><h3>Campeonato de skate</h3><p>Cinco categorias. A mesma paixão pela pista.</p></div></div>
+              <ul class="category-chips" aria-label="Categorias do campeonato"><li>Mirim</li><li>Iniciante</li><li>Amador</li><li>Master</li><li>Feminino</li></ul>
+              <a class="text-link" href="#categorias">Encontre sua categoria <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+              <div class="panel-bottom"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg> Parque Vicente Beneli</div>
+            </article>
+          </div>
         </div>
+      </div>
     </section>
-    </main>
+
+    <section class="categories-section container" id="categorias" aria-labelledby="categories-title">
+      <div class="section-heading reveal"><div><p class="eyebrow section-index">02 / CATEGORIAS</p><h2 id="categories-title">CADA ESTILO.<br>O MESMO <em>ROLÊ.</em></h2></div><p class="heading-note">Escolha a sua categoria e fale com<br>a organização para se inscrever.</p></div>
+      <div class="category-grid reveal">
+        <a class="category-card" data-category="Mirim" href="https://wa.me/5518997575365?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20na%20categoria%20Mirim%20do%20Altus%20Skate%20Fest%202026." target="_blank" rel="noopener noreferrer" aria-label="Inscrição na categoria Mirim pelo WhatsApp, abre em nova aba"><span class="category-top">01 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span><svg class="category-board" aria-hidden="true"><use href="#board"/></svg><span class="category-name">MIRIM</span><span class="category-action">BORA PARTICIPAR ↗</span></a>
+        <a class="category-card" data-category="Iniciante" href="https://wa.me/5518997575365?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20na%20categoria%20Iniciante%20do%20Altus%20Skate%20Fest%202026." target="_blank" rel="noopener noreferrer" aria-label="Inscrição na categoria Iniciante pelo WhatsApp, abre em nova aba"><span class="category-top">02 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span><svg class="category-board" aria-hidden="true"><use href="#board"/></svg><span class="category-name">INICIANTE</span><span class="category-action">BORA PARTICIPAR ↗</span></a>
+        <a class="category-card" data-category="Amador" href="https://wa.me/5518997575365?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20na%20categoria%20Amador%20do%20Altus%20Skate%20Fest%202026." target="_blank" rel="noopener noreferrer" aria-label="Inscrição na categoria Amador pelo WhatsApp, abre em nova aba"><span class="category-top">03 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span><svg class="category-board" aria-hidden="true"><use href="#board"/></svg><span class="category-name">AMADOR</span><span class="category-action">BORA PARTICIPAR ↗</span></a>
+        <a class="category-card" data-category="Master" href="https://wa.me/5518997575365?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20na%20categoria%20Master%20do%20Altus%20Skate%20Fest%202026." target="_blank" rel="noopener noreferrer" aria-label="Inscrição na categoria Master pelo WhatsApp, abre em nova aba"><span class="category-top">04 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span><svg class="category-board" aria-hidden="true"><use href="#board"/></svg><span class="category-name">MASTER</span><span class="category-action">BORA PARTICIPAR ↗</span></a>
+        <a class="category-card" data-category="Feminino" href="https://wa.me/5518997575365?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20na%20categoria%20Feminino%20do%20Altus%20Skate%20Fest%202026." target="_blank" rel="noopener noreferrer" aria-label="Inscrição na categoria Feminino pelo WhatsApp, abre em nova aba"><span class="category-top">05 <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span><svg class="category-board" aria-hidden="true"><use href="#board"/></svg><span class="category-name">FEMININO</span><span class="category-action">BORA PARTICIPAR ↗</span></a>
+      </div>
+      <p class="category-footnote">DOMINGO, 08 DE NOVEMBRO <span>CAMPEONATO A PARTIR DAS 9H</span></p>
+    </section>
+
+    <section class="prizes-section" id="premiacao" aria-labelledby="prizes-title">
+      <div class="container prizes-layout">
+        <div class="prizes-intro reveal"><p class="eyebrow section-index">03 / PREMIAÇÃO</p><h2 id="prizes-title">A MANOBRA<br><em>VALE.</em></h2><div class="prize-total"><span>R$</span> 2.000</div><p>Em premiação para as categorias<br>Amador e Master. É na pista que se decide.</p></div>
+        <div class="prize-cards reveal">
+          <article class="prize-card"><div class="prize-card-title"><h3>AMADOR</h3><span>01—03</span></div><ol class="prize-list"><li><span class="placing">1º <small>LUGAR</small></span><strong><small>R$</small> 700</strong></li><li><span class="placing">2º <small>LUGAR</small></span><strong><small>R$</small> 300</strong></li><li><span class="placing">3º <small>LUGAR</small></span><strong><small>R$</small> 200</strong></li></ol></article>
+          <article class="prize-card"><div class="prize-card-title"><h3>MASTER</h3><span>01—03</span></div><ol class="prize-list"><li><span class="placing">1º <small>LUGAR</small></span><strong><small>R$</small> 500</strong></li><li><span class="placing">2º <small>LUGAR</small></span><strong><small>R$</small> 200</strong></li><li><span class="placing">3º <small>LUGAR</small></span><strong><small>R$</small> 100</strong></li></ol></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors-section container" id="patrocinadores" aria-labelledby="sponsors-title">
+      <div class="section-heading reveal"><div><p class="eyebrow section-index">04 / PARCEIROS</p><h2 id="sponsors-title">QUEM FORTALECE<br><em>A CENA.</em></h2></div><p class="heading-note">Esse rolê acontece com a força<br>de quem acredita no skate.</p></div>
+      <figure class="sponsors-image reveal"><img src="assets/patrocinadores.png" alt="Painel oficial dos patrocinadores: Dejota, Lévon Idiomas, G&G Doces, New Gestão Integrada, Nego Reparos e Pinturas, Studio Ghuya, Despachante Ferrinho, Branco Pinturas, Celso Adesivos, H2D Engenharia, GS Studio Car, Conveniência da Família, ib Hubbi, Kombi Station, Iron Burger, Ink Session OG, Vila Fitness, CT Prime, Newstreet Company, Jimbos, Gelos Bar, Campeonatos de Skate, Agrocão-Fiança, Fraldas e Cia e Batatt Food" width="1672" height="941" loading="lazy"><figcaption><span>JUNTOS PELO SKATE.</span><button class="enlarge-button" id="open-sponsors" type="button">Ampliar patrocinadores <svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button></figcaption></figure>
+    </section>
+
+    <section class="faq-section container" aria-labelledby="faq-title">
+      <div class="faq-intro reveal"><p class="eyebrow">ANTES DE COLAR</p><h2 id="faq-title">SEM<br><em>DÚVIDAS.</em></h2></div>
+      <div class="faq-list reveal">
+        <details><summary>A entrada é gratuita?<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary><div>Sim! A entrada para o público é franca nos dois dias. Para participar do campeonato, fale com a organização e confirme os detalhes da inscrição na sua categoria.</div></details>
+        <details><summary>Como faço minha inscrição?<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary><div>Escolha sua categoria ou toque em “Inscreva-se”. Você será direcionado ao WhatsApp da organização para conversar e confirmar sua participação. <a class="register-link" href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21" target="_blank" rel="noopener noreferrer">Falar com a organização ↗</a></div></details>
+        <details><summary>Onde e quando acontece?<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary><div>No Parque Vicente Beneli, em 7 e 8 de novembro de 2026. No sábado, as atrações começam a partir das 18h. No domingo, o campeonato começa a partir das 9h.</div></details>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="container closing-content reveal"><p class="eyebrow">07 + 08 NOV · PARQUE VICENTE BENELI</p><h2 id="closing-title">A GENTE SE VÊ<br><span>NA PISTA.</span><svg class="closing-arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg></h2><div class="closing-bottom"><p>Traga o skate. Chame a galera.<br>O resto é história pra contar.</p><a class="button button-yellow register-link" href="https://wa.me/5518997575365?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20no%20Altus%20Skate%20Fest%202026%21" target="_blank" rel="noopener noreferrer">Quero participar <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><a class="wordmark" href="#inicio" aria-label="Altus Skate Fest — voltar ao início"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-type">ALTUS<span>SKATE FEST</span></span></a><p>SKATE, CULTURA E CONEXÃO. DESDE 2019.</p><a class="back-top" href="#inicio">Voltar ao topo ↑</a></footer>
+
+  <dialog id="sponsors-dialog" aria-labelledby="dialog-title"><div class="dialog-bar"><h2 id="dialog-title">PARCEIROS DO ROLÊ</h2><div><button type="button" id="zoom-sponsors" aria-pressed="false">Ampliar logos +</button><button type="button" id="close-sponsors" aria-label="Fechar patrocinadores">Fechar ×</button></div></div><div class="dialog-image-viewport" tabindex="0" aria-label="Painel de patrocinadores. Use as setas para percorrer a imagem quando ampliada."><img src="assets/patrocinadores.png" alt="Painel oficial completo dos patrocinadores do Altus Skate Fest 2026" width="1672" height="941" loading="lazy"></div></dialog>
 </body>
 </html>
