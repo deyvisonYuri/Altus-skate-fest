@@ -263,3 +263,93 @@ html.reveals-ready .reveal.is-visible{opacity:1;transform:none}
 @media(max-width:360px){:root{--gutter:17px}.header-inner{gap:11px}.header-cta{gap:7px;padding-inline:9px}.hero-actions{gap:12px}.hero-actions .button{gap:14px;padding-inline:14px}.hero-skate{font-size:16vw}.hero-tagline p{font-size:11px}.explore-link{font-size:8px}.day-tab{gap:8px;padding-inline:10px}.day-tab>.icon{display:none}.tab-label{font-size:16px}.prize-card{padding-inline:11px}.prize-card-title h3{font-size:22px}.prize-list strong{font-size:28px}.prize-card-title>span{display:none}.closing-arrow{width:39px;height:39px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.ticker-track{animation:none}html.reveals-ready .reveal{opacity:1;transform:none}.hero-photo{transform:none!important}}
 @media print{.site-header,.ticker,.countdown-section,.hero-actions,.hero-footnote,.hero-visual,.category-board,.category-action,.faq-section,.closing-section,.site-footer,dialog{display:none!important}body,.light-section,.prizes-section{background:white!important;color:black!important}.container{width:100%}.hero{display:block;min-height:0;padding:0}.hero-altus{font-size:70px}.hero-skate{font-size:40px}.hero-tagline{margin-bottom:25px}.hero-tagline p,.edition,em{color:black}.hero-tagline p{font-size:14px}.section-heading h2{font-size:32px}.schedule-section,.categories-section,.prizes-section,.sponsors-section{padding-block:25px}.schedule-tabs{display:none}.schedule-layout{display:block}.day-panel[hidden]{display:block!important}.day-panel{break-inside:avoid;background:white;color:black;min-height:0;padding:20px}.day-panel+.day-panel{margin-top:15px}.category-grid{grid-template-columns:repeat(5,1fr)}.category-card{min-height:60px;background:white!important;color:black!important;padding:10px;border:1px solid #999!important}.category-card:last-child{grid-column:auto;min-height:60px}.category-name,.category-card:last-child .category-name{font-size:22px;padding:15px 0 0}.category-top{color:black}.prizes-layout{display:block}.prize-cards{margin-top:20px}.prize-card{color:black;background:white;box-shadow:none}.prize-card-title h3,.prize-list li:first-child strong{color:black}.reveal{opacity:1!important;transform:none!important}}
+
+/* ===================================================================
+   MELHORIAS DE VISIBILIDADE E CONTRASTE DA PROGRAMAÇÃO (.schedule-section)
+   =================================================================== */
+
+/* 1. Texto do topo da secção (ex: "No sábado, o som toma conta...") */
+.light-section .heading-note {
+  color: #2b2e24 !important; /* Texto bem escuro e legível */
+  font-weight: 500;
+}
+
+.light-section .section-index {
+  color: #4a4e3f !important;
+}
+
+/* 2. Caixa do painel do dia (Sábado / Domingo) */
+.day-panel {
+  padding: 27px 30px 0;
+  border: 2px solid #8c917c !important; /* Borda mais forte ao redor da caixa */
+  background: #e2e5d9 !important; /* Fundo ligeiramente mais contrastado */
+  position: relative;
+  min-height: 382px;
+}
+
+/* 3. Textos superiores da caixa ("07 DE NOVEMBRO", "ABRE O FESTIVAL") */
+.panel-topline {
+  color: #1b1c18 !important; /* Preto/Cinza bem escuro */
+  font-weight: 700;
+}
+
+.panel-tag {
+  background: #cbd0be !important;
+  color: #11120f !important;
+  font-weight: 700;
+}
+
+/* 4. Destaque dos Horários ("18H", "09H") */
+.panel-time > span {
+  color: #383b2e !important;
+  font-weight: 700;
+}
+
+.panel-time > strong {
+  color: #11120f !important;
+}
+
+/* 5. Itens da programação (Atrações, números e descrições) */
+.schedule-item {
+  border-top: 1px solid #9ea38f !important; /* Linha divisória mais marcada */
+}
+
+.item-number {
+  color: #2b2e24 !important;
+  font-weight: 700;
+}
+
+.schedule-item h3 {
+  color: #11120f !important;
+  font-size: 22px;
+}
+
+.schedule-item p {
+  color: #21231b !important; /* Descrição (ex: "A trilha sonora do nosso encontro") bem nítida */
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.item-tag {
+  color: #2b2e24 !important;
+  font-weight: 700;
+}
+
+/* 6. Rodapé do painel ("Parque Vicente Beneli") */
+.panel-bottom {
+  border-top: 1px solid #9ea38f !important;
+  color: #2b2e24 !important;
+  font-weight: 600;
+}
+
+.panel-bottom .icon {
+  color: #11120f !important;
+}
+
+/* 7. Chips de categorias (Mirim, Iniciante, Amador...) */
+.category-chips > li {
+  border: 1px solid #737865 !important;
+  color: #11120f !important;
+  background: #d8dccf !important;
+  font-weight: 600;
+}
